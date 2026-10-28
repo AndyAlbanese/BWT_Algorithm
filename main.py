@@ -2,6 +2,7 @@
 
 parola = (input("Inserisci la parola da cifrare: ")+"$")
 
+rotazioni = []
 for i in range(len(parola)):
-    parola = parola[i:] + parola[:i]
-    print(parola) #String Rotation
+    rotazioni.append(parola[i:] + parola[:i])
+    print(rotazioni) #String Rotation
